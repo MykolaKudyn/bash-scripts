@@ -1,0 +1,24 @@
+KERNEL UPDATE
+- backup legacy config
+  
+    cd /usr/src/linux
+    cp .config ~/kernel-config-`uname -r`
+- change kernel version using eselect kernel set
+- copy legacy kernel config
+    cp /usr/src/linux-`uname -r`/.config /usr/src/linux/.config
+- make oldconfig
+    cd /usr/src/linux
+    make oldconfig (or make silentoldconfig)
+
+- prepare legacy modules for instalation
+    make modules_prepare
+
+- compile new kernel
+    make && make modules_install && make install
+
+- install grub2
+    grub2-install /dev/sda
+    grub2-mkconfig -o /boot/grub/grub.cfg
+
+- reinstall legacy modules
+    emerge --ask @module-rebuild
