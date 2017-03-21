@@ -1,12 +1,8 @@
-/mnt/gentoo/export/
-/mnt/gentoo/home
+/mnt/gentoo/home/*
 /mnt/gentoo/media/*
-/mnt/gentoo/misc
-/mnt/gentoo/mnt
+/mnt/gentoo/lost+found
 /mnt/gentoo/proc/*
+/mnt/gentoo/mnt/*
 /mnt/gentoo/dev/*
-/mnt/gentoo/sys/*
 /mnt/gentoo/tmp/*
-/mnt/gentoo/usr/portage
-/mnt/gentoo/var/cache/*
 /mnt/gentoo/var/tmp/*

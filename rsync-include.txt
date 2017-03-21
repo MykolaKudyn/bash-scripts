@@ -1,2 +1,2 @@
-/mnt/gentoo/dev/null
 /mnt/gentoo/dev/console
+/mnt/gentoo/dev/null

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd `pwd`
-tar -pxvzf $1
+tar --preserve-permissions --verbose --gunzip --extract --xattrs --acl --selinux --file $1
